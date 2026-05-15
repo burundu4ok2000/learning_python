@@ -9,7 +9,13 @@ wheels/
 # Virtual environments
 .venv
 
+# Other
 .agents/
-
 __marimo__/
+
+# Secrets
+.env
+
+data/
+
 
