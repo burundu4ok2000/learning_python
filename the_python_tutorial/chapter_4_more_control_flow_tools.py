@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.23.5"
+__generated_with = "0.23.0"
 app = marimo.App(width="medium")
 
 
@@ -436,6 +436,16 @@ def _():
 
     if time_fast > 0:
         print(f"\nSPEEDUP: len(set()) is {(time_slow / time_fast):.1f}x faster than sum().")
+    return
+
+
+@app.cell
+def _():
+    for n in range(2, 10):
+        for x in range(2, n):
+            if n % x == 0:
+                print(f"{n} equals {x} * {n//x}")
+                break
     return
 
 
